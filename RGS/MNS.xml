@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test thread-count="5" name="Ruby">
+    <classes>
+      <class name="MockNativeSystem.MockNativeSystem">
+      <methods>
+      <include name="Ruby"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+
+  <test thread-count="5" name="CelticClouds">
+    <classes>
+      <class name="MockNativeSystem.MockNativeSystem">
+      <methods>
+      <include name="CelticClouds"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="Lucky">
+    <classes>
+      <class name="MockNativeSystem.MockNativeSystem">
+      <methods>
+      <include name="Lucky"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
