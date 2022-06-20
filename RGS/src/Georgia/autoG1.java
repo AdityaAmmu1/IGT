@@ -12,10 +12,10 @@ import org.sikuli.script.Screen;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class autoG1 {
+public class autoG1{
 	public static WebDriver driver;
 	@BeforeTest
-	public void beforeTest() throws InterruptedException, AWTException {
+	public void beforeTest() throws InterruptedException, AWTException{
 		System.setProperty("webdriver.chrome.driver", "C:\\BrowserDrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://gasc1playdigital.dev.igt.com/en-us/home.html");
