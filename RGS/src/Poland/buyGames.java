@@ -17,12 +17,12 @@ import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.annotations.AfterMethod;
 
-public class buyGames {
+public class buyGames{
 	public static WebDriver driver;
 	@BeforeMethod
 	@Parameters("browser")
 	public void beforeMethod(String browser) throws InterruptedException, FindFailed {
-		switch(browser.toLowerCase()) {
+		switch(browser.toLowerCase()){
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", "C:\\BrowserDrivers\\chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();

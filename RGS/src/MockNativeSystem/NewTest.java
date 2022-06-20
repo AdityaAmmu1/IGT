@@ -94,12 +94,20 @@ public class NewTest {
 			    
 			    driver.findElement(By.xpath("/html/body/div/div/aside/section/ul/li[5]/a/span")).click();
 			    driver.findElement(By.xpath("/html/body/div/div/aside/section/ul/li[5]/ul/li/a")).click();
-			    while(i.hasNext())
-			    {
-			        String childID = i.next(); //Child Windows
-			        driver.switchTo().window(childID); // Iterating over child windows
-			    }
-			    driver.findElement(By.xpath("//*[contains(@tabindex=\"0\")]/table/tbody/tr[3]/td[8]/a")).click();
+			    Thread.sleep(4000);	
+			    for(String child11 : driver.getWindowHandles())
+			    	{
+			    	driver.switchTo().window(child11);
+			    	}
+			    	Thread.sleep(4000);
+			    driver.findElement(By.cssSelector("#msg-list-wrapper > table > tbody > tr:nth-child(3) > td:nth-child(8) > a")).click();
+			    Thread.sleep(3000);
+			    driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/div/form/div[2]/button[2]")).click();
+			    Thread.sleep(3000);
+			    driver.findElement(By.xpath("/html/body/div/div/div[1]/div[2]/div/section/div/div/div/div[2]/div/ul/li[2]/a")).click();
+			    Thread.sleep(1000);
+			    
 		  }
+  	
   }
 
